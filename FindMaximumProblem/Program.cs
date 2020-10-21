@@ -8,7 +8,7 @@ namespace FindMaximumProblem
         {
             Console.WriteLine("Welcome to Find Maximum Problem");
             GetMaximum getMaxObj = new GetMaximum();
-            Console.WriteLine(getMaxObj.GetMaxInt(22, 20, 70));
+            Console.WriteLine(getMaxObj.GetMaxFloat(50.2, 45.101, 84.45));
         }
     }
 }

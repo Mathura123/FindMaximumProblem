@@ -14,5 +14,14 @@ namespace FindMaximumProblem
             else
                 return thirdInt;
         }
+        public double GetMaxFloat(double firstFloat, double secondFloat, double thirdFloat)
+        {
+            if (firstFloat.CompareTo(secondFloat) >= 0 && firstFloat.CompareTo(thirdFloat) >= 0)
+                return firstFloat;
+            else if (secondFloat.CompareTo(firstFloat) >= 0 && secondFloat.CompareTo(thirdFloat) >= 0)
+                return secondFloat;
+            else
+                return thirdFloat;
+        }
     }
 }
