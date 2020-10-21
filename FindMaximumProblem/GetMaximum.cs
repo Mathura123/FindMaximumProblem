@@ -17,7 +17,7 @@ namespace FindMaximumProblem
             Array.Sort(values);
             return values;
         }
-        private T GetMaxValue()
+        public T GetMaxValue()
         {
             T[] sortedValues = SortValues(values);
             return sortedValues[sortedValues.Length - 1];
