@@ -61,5 +61,16 @@ namespace FindMaximumUTest
             //Assert
             Assert.AreEqual(expected, result);
         }
+        [TestMethod]
+        public void Given_Max_Float_No_At_Third_Position_Should_Return_The_Max_No()
+        {
+            //Arrange
+            double expected = 150.455;
+            GetMaximum getMaxTestObj = new GetMaximum();
+            //Act
+            double result = getMaxTestObj.GetMaxFloat(90.45, 90.1, 150.455);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
     }
 }
