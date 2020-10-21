@@ -7,7 +7,7 @@ namespace FindMaximumUTest
     public class UnitTests
     {
         [TestMethod]
-        public void Given_Input_Array_Of_Values_Return_The_Max_Value_Using_Generic_Class()
+        public void Given_Input_Array_Of_Values_Should_Return_The_Max_Value_Using_Generic_Class()
         {
             //Arrange
             int[] input = { 45, 389, 41 ,45,589,35};
