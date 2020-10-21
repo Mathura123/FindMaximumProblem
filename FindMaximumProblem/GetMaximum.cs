@@ -3,9 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 namespace FindMaximumProblem
 {
-    public class GetMaximum
+    public class GetMaximum<T> where T: IComparable
     {
-        public T GetMaxValue<T>(T firstValue, T secondValue, T thirdValue) where T : IComparable
+        private T firstValue;
+        private T secondValue;
+        private T thirdValue;
+        public GetMaximum(T firstValue,T secondValue, T thirdValue)
+        {
+            this.firstValue = firstValue;
+            this.secondValue = secondValue;
+            this.thirdValue = thirdValue;
+        }
+        public T GetMaxValue()
         {
             if (firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) >= 0)
                 return firstValue;
