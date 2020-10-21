@@ -28,16 +28,16 @@ namespace FindMaximumUTest
             //Assert
             Assert.AreEqual(expected, result);
         }
-        //[TestMethod]
-        //public void Given_Max_Value_At_Third_Position_Should_Return_The_Max_Value()
-        //{
-        //    //Arrange
-        //    double expected = 145.01;
-        //    GetMaximum getMaxTestObj = new GetMaximum();
-        //    //Act
-        //    double result = getMaxTestObj.GetMaxValue(45.12, 7.152, 145.01);
-        //    //Assert
-        //    Assert.AreEqual(expected, result);
-        //}
+        [TestMethod]
+        public void Given_Max_Value_At_Third_Position_Should_Return_The_Max_Value_Using_Generic_Class()
+        {
+            //Arrange
+            double expected = 145.01;
+            GetMaximum<double> getMaxTestObj = new GetMaximum<double>(45.12, 7.152, 145.01);
+            //Act
+            double result = getMaxTestObj.GetMaxValue();
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
     }
 }
