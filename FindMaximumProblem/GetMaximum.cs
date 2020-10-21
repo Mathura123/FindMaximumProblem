@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 namespace FindMaximumProblem
 {
-    class GetMaximum
+    public class GetMaximum
     {
         public int GetMaxInt(int firstInt, int secondInt, int thirdInt)
         {
