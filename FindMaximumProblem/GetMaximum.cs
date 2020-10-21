@@ -17,10 +17,15 @@ namespace FindMaximumProblem
             Array.Sort(values);
             return values;
         }
-        public T GetMaxValue()
+        private T GetMaxValue()
         {
             T[] sortedValues = SortValues(values);
             return sortedValues[sortedValues.Length - 1];
+        }
+        public void PrintMaxVal()
+        {
+            T maxVal = GetMaxValue();
+            Console.WriteLine("Max Value is "+ maxVal);
         }
     }
 }
