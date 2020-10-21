@@ -72,5 +72,16 @@ namespace FindMaximumUTest
             //Assert
             Assert.AreEqual(expected, result);
         }
+        [TestMethod]
+        public void Given_Max_String_At_First_Position_Should_Return_The_Max_String()
+        {
+            //Arrange
+            string expected = "Peach";
+            GetMaximum getMaxTestObj = new GetMaximum();
+            //Act
+            string result = getMaxTestObj.GetMaxString("Peach", "Banana", "Apple");
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
     }
 }
