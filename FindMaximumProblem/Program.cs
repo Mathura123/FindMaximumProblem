@@ -7,7 +7,8 @@ namespace FindMaximumProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Find Maximum Problem");
-            GetMaximum<double> getMaxObj = new GetMaximum<double>(2, 45.89, 4.8);
+            double[] input = { 2.4, 4.3, 5.6 ,5.4,8.46,782.08};
+            GetMaximum<double> getMaxObj = new GetMaximum<double>(input);
             Console.WriteLine(getMaxObj.GetMaxValue());
         }
     }
