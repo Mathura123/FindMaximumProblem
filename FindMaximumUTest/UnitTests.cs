@@ -28,5 +28,16 @@ namespace FindMaximumUTest
             //Assert
             Assert.AreEqual(expected, result);
         }
+        [TestMethod]
+        public void Given_Max_Number_At_Third_Position_Should_Return_The_Max_No()
+        {
+            //Arrange
+            int expected = 90;
+            GetMaximum getMaxTestObj = new GetMaximum();
+            //Act
+            int result = getMaxTestObj.GetMaxInt(9, 80, 90);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
     }
 }
