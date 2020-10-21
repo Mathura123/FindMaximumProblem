@@ -8,7 +8,7 @@ namespace FindMaximumProblem
         {
             Console.WriteLine("Welcome to Find Maximum Problem");
             GetMaximum getMaxObj = new GetMaximum();
-            Console.WriteLine(getMaxObj.GetMaxString("Apple", "Peach", "Banana"));
+            Console.WriteLine(getMaxObj.GetMaxValue(4,5.01,45.1));
         }
     }
 }
